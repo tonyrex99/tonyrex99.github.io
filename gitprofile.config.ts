@@ -60,7 +60,7 @@ const CONFIG = {
   },
   social: {
     linkedin: 'ebunifeoluwa-adenuga-131a981b1',
- /  twitter:  '', // 'arif_szn',
+    twitter:  '', // 'arif_szn',
     mastodon:  '', //'arifszn@mastodon.social',
     researchGate: '', //
     facebook: '',
