@@ -2,7 +2,7 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'tonyrex99', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -29,6 +29,7 @@ const CONFIG = {
       },
     },
     external: {
+      /*
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
@@ -50,6 +51,7 @@ const CONFIG = {
         },
       ],
     },
+    */
   },
   seo: {
     title: 'Portfolio of Ariful Alam',
@@ -57,10 +59,10 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
+    linkedin: 'ebunifeoluwa-adenuga-131a981b1',
+ /  twitter:  '', // 'arif_szn',
+    mastodon:  '', //'arifszn@mastodon.social',
+    researchGate: '', //
     facebook: '',
     instagram: '',
     reddit: '',
@@ -69,75 +71,117 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium:  '', //'arifszn',
+    dev: '', // 'arifszn',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website:  '', //'https://www.arifszn.com',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'tonyrex99@wearehackerone.com',
   },
   resume: {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
     'JavaScript',
     'React.js',
+    'Next.js',
+    'Remix.js',
     'Node.js',
-    'Nest.js',
     'MySQL',
-    'PostgreSQL',
     'Git',
-    'Docker',
-    'PHPUnit',
     'CSS',
     'Antd',
     'Tailwind',
   ],
-  experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
-  educations: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
-  ],
+experiences: [
+  {
+    company: 'Ashinity Synergy',
+    position: 'Front-End and Mobile Developer',
+    from: 'February 2024',
+    to: 'Present',
+    companyLink: 'https://example.com', // No link provided in the resume, update if needed
+  },
+  {
+    company: 'Infonomics Technology Services',
+    position: 'React Developer',
+    from: 'July 2023',
+    to: 'September 2023',
+    companyLink: '', //'https://example.com', // No link provided in the resume, update if needed
+  },
+  {
+    company: 'Mdot Technologies',
+    position: 'Cross-Platform React Developer',
+    from: 'March 2023',
+    to: 'July 2023',
+    companyLink:'', // 'https://example.com', // No link provided in the resume, update if needed
+  },
+  {
+    company: 'Patea Essentials',
+    position: 'Computer Operator and Technician',
+    from: 'June 2017',
+    to: 'April 2021',
+    companyLink: '', //'https://example.com', // No link provided in the resume, update if needed
+  },
+],
+
+certifications: [
+  {
+    name: 'Introduction to Cybersecurity',
+    body: 'Cisco',
+    year: 'March 2022', // No exact date in the resume, assuming date
+    link: 'https://example.com', // No link provided in the resume, update if needed
+  },
+  {
+    name: 'Programming in C++: A Hands-on Introduction Specialization',
+    body: 'Coursera',
+    year: 'March 2022', // Add exact dates if required
+    link: 'W2WDC9P84SC6', // No direct link provided
+  },
+  {
+    name: 'React Native',
+    body: 'Coursera',
+    year: 'March 2022',
+    link: 'VY4LLMU7SDCH',
+  },
+  {
+    name: 'Introduction to TensorFlow for AI, ML, and Deep Learning',
+    body: 'Coursera',
+    year: 'March 2022',
+    link: 'W4GWBGHGWBJ8',
+  },
+  {
+    name: 'Python Basics',
+    body: 'Coursera',
+    year: 'March 2022',
+    link: 'X3SP92C36LCS',
+  },
+  {
+    name: 'C Basics: Selection and Iteration',
+    body: 'Coursera',
+    year: 'March 2022',
+    link: '959RDEJD6AXQ',
+  },
+  {
+    name: 'Live the Code 2.0',
+    body: 'GeeksforGeeks ADGIPS Chapter',
+    year: 'March 2022',
+    link: 'c9f730a6-bed2-4707-b29b-a8684ad1f899',
+  },
+],
+
+educations: [
+  {
+    institution: 'Covenant University',
+    degree: "Bachelor's degree, Computer Engineering",
+    from: '2019',
+    to: '2024',
+  },
+],
   publications: [
-    {
+  /*  {
       title: 'Publication Title',
       conferenceName: '',
       journalName: 'Journal Name',
@@ -154,13 +198,13 @@ const CONFIG = {
       link: 'https://example.com',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
+    },*/
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    source:  '', // 'dev', // medium | dev
+    username:  '', //'arifszn', // to hide blog section, keep it empty
+    limit:  '', // 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
@@ -171,7 +215,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'synthwave',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
