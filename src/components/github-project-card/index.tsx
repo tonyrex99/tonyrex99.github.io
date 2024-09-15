@@ -109,12 +109,11 @@ const GithubProjectCard = ({
           </div>
           <div className="flex justify-between text-sm truncate text-base-content text-opacity-60">
             <div className="flex flex-grow">
-              {item?.watchers_count && (
-                <span className="flex items-center mr-3">
-                  <AiOutlineEye className="mr-0.5" />
-                  <span>{item.watchers_count}</span>
-                </span>
-              )}
+              <span className="flex items-center mr-3">
+                <AiOutlineEye className="mr-0.5" />
+                <span>{item.watchers_count}</span>
+              </span>
+
               <span className="flex items-center mr-3">
                 <AiOutlineStar className="mr-0.5" />
                 <span>{item.stargazers_count}</span>
@@ -131,7 +130,7 @@ const GithubProjectCard = ({
                     className="w-3 h-3 mr-1 rounded-full opacity-60"
                     style={{ backgroundColor: getLanguageColor('ABAP') }}
                   />
-                  <span>Live</span>
+                  <span className="underline">Live</span>
                 </a>
               )}
               <span className="flex items-center">
