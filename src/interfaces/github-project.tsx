@@ -5,4 +5,6 @@ export interface GithubProject {
   stargazers_count: string;
   forks_count: string;
   language: string;
+  watchers?: string;
+  homepage?: string;
 }

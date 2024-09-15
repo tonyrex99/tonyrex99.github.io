@@ -54,17 +54,17 @@ const CONFIG = {
       ],
     },
     */
+    },
   },
-},
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Adenuga Ebunifeoluwa',
     description: '',
     imageURL: '',
   },
   social: {
     linkedin: 'ebunifeoluwa-adenuga-131a981b1',
-    twitter:  '', // 'arif_szn',
-    mastodon:  '', //'arifszn@mastodon.social',
+    twitter: '', // 'arif_szn',
+    mastodon: '', //'arifszn@mastodon.social',
     researchGate: '', //
     facebook: '',
     instagram: '',
@@ -74,12 +74,12 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium:  '', //'arifszn',
+    medium: '', //'arifszn',
     dev: '', // 'arifszn',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website:  '', //'https://www.arifszn.com',
+    website: '', //'https://www.arifszn.com',
     phone: '',
     email: 'tonyrex99@wearehackerone.com',
   },
@@ -99,92 +99,92 @@ const CONFIG = {
     'Antd',
     'Tailwind',
   ],
-experiences: [
-  {
-    company: 'Ashinity Synergy',
-    position: 'Front-End and Mobile Developer',
-    from: 'February 2024',
-    to: 'Present',
-    companyLink: 'https://example.com', // No link provided in the resume, update if needed
-  },
-  {
-    company: 'Infonomics Technology Services',
-    position: 'React Developer',
-    from: 'July 2023',
-    to: 'September 2023',
-    companyLink: '', //'https://example.com', // No link provided in the resume, update if needed
-  },
-  {
-    company: 'Mdot Technologies',
-    position: 'Cross-Platform React Developer',
-    from: 'March 2023',
-    to: 'July 2023',
-    companyLink:'', // 'https://example.com', // No link provided in the resume, update if needed
-  },
-  {
-    company: 'Patea Essentials',
-    position: 'Computer Operator and Technician',
-    from: 'June 2017',
-    to: 'April 2021',
-    companyLink: '', //'https://example.com', // No link provided in the resume, update if needed
-  },
-],
+  experiences: [
+    {
+      company: 'Ashinity Synergy',
+      position: 'Front-End and Mobile Developer',
+      from: 'February 2024',
+      to: 'Present',
+      companyLink: 'https://example.com', // No link provided in the resume, update if needed
+    },
+    {
+      company: 'Infonomics Technology Services',
+      position: 'React Developer',
+      from: 'July 2023',
+      to: 'September 2023',
+      companyLink: '', //'https://example.com', // No link provided in the resume, update if needed
+    },
+    {
+      company: 'Mdot Technologies',
+      position: 'Cross-Platform React Developer',
+      from: 'March 2023',
+      to: 'July 2023',
+      companyLink: '', // 'https://example.com', // No link provided in the resume, update if needed
+    },
+    {
+      company: 'Patea Essentials',
+      position: 'Computer Operator and Technician',
+      from: 'June 2017',
+      to: 'April 2021',
+      companyLink: '', //'https://example.com', // No link provided in the resume, update if needed
+    },
+  ],
 
-certifications: [
-  {
-    name: 'Introduction to Cybersecurity',
-    body: 'Cisco',
-    year: 'March 2022', // No exact date in the resume, assuming date
-    link: 'https://example.com', // No link provided in the resume, update if needed
-  },
-  {
-    name: 'Programming in C++: A Hands-on Introduction Specialization',
-    body: 'Coursera',
-    year: 'March 2022', // Add exact dates if required
-    link: 'W2WDC9P84SC6', // No direct link provided
-  },
-  {
-    name: 'React Native',
-    body: 'Coursera',
-    year: 'March 2022',
-    link: 'VY4LLMU7SDCH',
-  },
-  {
-    name: 'Introduction to TensorFlow for AI, ML, and Deep Learning',
-    body: 'Coursera',
-    year: 'March 2022',
-    link: 'W4GWBGHGWBJ8',
-  },
-  {
-    name: 'Python Basics',
-    body: 'Coursera',
-    year: 'March 2022',
-    link: 'X3SP92C36LCS',
-  },
-  {
-    name: 'C Basics: Selection and Iteration',
-    body: 'Coursera',
-    year: 'March 2022',
-    link: '959RDEJD6AXQ',
-  },
-  {
-    name: 'Live the Code 2.0',
-    body: 'GeeksforGeeks ADGIPS Chapter',
-    year: 'March 2022',
-    link: 'c9f730a6-bed2-4707-b29b-a8684ad1f899',
-  },
-],
+  certifications: [
+    {
+      name: 'Introduction to Cybersecurity',
+      body: 'Cisco',
+      year: 'March 2022', // No exact date in the resume, assuming date
+      link: 'https://example.com', // No link provided in the resume, update if needed
+    },
+    {
+      name: 'Programming in C++: A Hands-on Introduction Specialization',
+      body: 'Coursera',
+      year: 'March 2022', // Add exact dates if required
+      link: 'W2WDC9P84SC6', // No direct link provided
+    },
+    {
+      name: 'React Native',
+      body: 'Coursera',
+      year: 'March 2022',
+      link: 'VY4LLMU7SDCH',
+    },
+    {
+      name: 'Introduction to TensorFlow for AI, ML, and Deep Learning',
+      body: 'Coursera',
+      year: 'March 2022',
+      link: 'W4GWBGHGWBJ8',
+    },
+    {
+      name: 'Python Basics',
+      body: 'Coursera',
+      year: 'March 2022',
+      link: 'X3SP92C36LCS',
+    },
+    {
+      name: 'C Basics: Selection and Iteration',
+      body: 'Coursera',
+      year: 'March 2022',
+      link: '959RDEJD6AXQ',
+    },
+    {
+      name: 'Live the Code 2.0',
+      body: 'GeeksforGeeks ADGIPS Chapter',
+      year: 'March 2022',
+      link: 'c9f730a6-bed2-4707-b29b-a8684ad1f899',
+    },
+  ],
 
-educations: [
-  {
-    institution: 'Covenant University',
-    degree: "Bachelor's degree, Computer Engineering",
-    from: '2019',
-    to: '2024',
-  },
-],
+  educations: [
+    {
+      institution: 'Covenant University',
+      degree: "Bachelor's degree, Computer Engineering",
+      from: '2019',
+      to: '2024',
+    },
+  ],
   publications: [
-  /*  {
+    /*  {
       title: 'Publication Title',
       conferenceName: '',
       journalName: 'Journal Name',
@@ -205,9 +205,9 @@ educations: [
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source:  '', // 'dev', // medium | dev
-    username:  '', //'arifszn', // to hide blog section, keep it empty
-    limit:  '', // 2, // How many articles to display. Max is 10.
+    source: '', // 'dev', // medium | dev
+    username: '', //'arifszn', // to hide blog section, keep it empty
+    limit: '', // 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX

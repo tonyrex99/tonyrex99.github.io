@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
+import { AiOutlineFork, AiOutlineStar, AiOutlineEye } from 'react-icons/ai';
 import { MdInsertLink } from 'react-icons/md';
 import { ga, getLanguageColor, skeleton } from '../../utils';
 import { GithubProject } from '../../interfaces/github-project';
@@ -27,12 +27,12 @@ const GithubProjectCard = ({
     const array = [];
     for (let index = 0; index < limit; index++) {
       array.push(
-        <div className="card shadow-lg compact bg-base-100" key={index}>
-          <div className="flex justify-between flex-col p-8 h-full w-full">
+        <div className="shadow-lg card compact bg-base-100" key={index}>
+          <div className="flex flex-col justify-between w-full h-full p-8">
             <div>
               <div className="flex items-center">
                 <span>
-                  <h5 className="card-title text-lg">
+                  <h5 className="text-lg card-title">
                     {skeleton({
                       widthCls: 'w-32',
                       heightCls: 'h-8',
@@ -41,7 +41,7 @@ const GithubProjectCard = ({
                   </h5>
                 </span>
               </div>
-              <div className="mb-5 mt-1">
+              <div className="mt-1 mb-5">
                 {skeleton({
                   widthCls: 'w-full',
                   heightCls: 'h-4',
@@ -52,7 +52,7 @@ const GithubProjectCard = ({
             </div>
             <div className="flex justify-between">
               <div className="flex flex-grow">
-                <span className="mr-3 flex items-center">
+                <span className="flex items-center mr-3">
                   {skeleton({ widthCls: 'w-12', heightCls: 'h-4' })}
                 </span>
                 <span className="flex items-center">
@@ -76,7 +76,7 @@ const GithubProjectCard = ({
   const renderProjects = () => {
     return githubProjects.map((item, index) => (
       <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        className="shadow-lg cursor-pointer card compact bg-base-100"
         href={item.html_url}
         key={index}
         onClick={(e) => {
@@ -95,21 +95,27 @@ const GithubProjectCard = ({
           window?.open(item.html_url, '_blank');
         }}
       >
-        <div className="flex justify-between flex-col p-8 h-full w-full">
+        <div className="flex flex-col justify-between w-full h-full p-8">
           <div>
             <div className="flex items-center truncate">
-              <div className="card-title text-lg tracking-wide flex text-base-content opacity-60">
+              <div className="flex text-lg tracking-wide card-title text-base-content opacity-60">
                 <MdInsertLink className="my-auto" />
                 <span>{item.name}</span>
               </div>
             </div>
-            <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm">
+            <p className="mt-1 mb-5 text-sm text-base-content text-opacity-60">
               {item.description}
             </p>
           </div>
-          <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">
+          <div className="flex justify-between text-sm truncate text-base-content text-opacity-60">
             <div className="flex flex-grow">
-              <span className="mr-3 flex items-center">
+              {item?.watchers && (
+                <span className="flex items-center mr-3">
+                  <AiOutlineEye className="mr-0.5" />
+                  <span>{item.watchers}</span>
+                </span>
+              )}
+              <span className="flex items-center mr-3">
                 <AiOutlineStar className="mr-0.5" />
                 <span>{item.stargazers_count}</span>
               </span>
@@ -119,9 +125,18 @@ const GithubProjectCard = ({
               </span>
             </div>
             <div>
+              {item?.homepage && (
+                <a href={item?.homepage} className="flex items-center">
+                  <div
+                    className="w-3 h-3 mr-1 rounded-full opacity-60"
+                    style={{ backgroundColor: getLanguageColor('ABAP') }}
+                  />
+                  <span>Live</span>
+                </a>
+              )}
               <span className="flex items-center">
                 <div
-                  className="w-3 h-3 rounded-full mr-1 opacity-60"
+                  className="w-3 h-3 mr-1 rounded-full opacity-60"
                   style={{ backgroundColor: getLanguageColor(item.language) }}
                 />
                 <span>{item.language}</span>
@@ -138,9 +153,9 @@ const GithubProjectCard = ({
       <div className="col-span-1 lg:col-span-2">
         <div className="grid grid-cols-2 gap-6">
           <div className="col-span-2">
-            <div className="card compact bg-base-100 shadow bg-opacity-40">
+            <div className="shadow card compact bg-base-100 bg-opacity-40">
               <div className="card-body">
-                <div className="mx-3 flex items-center justify-between mb-2">
+                <div className="flex items-center justify-between mx-3 mb-2">
                   <h5 className="card-title">
                     {loading ? (
                       skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
@@ -157,14 +172,14 @@ const GithubProjectCard = ({
                       href={`https://github.com/${username}?tab=repositories`}
                       target="_blank"
                       rel="noreferrer"
-                      className="text-base-content opacity-50 hover:underline"
+                      className="opacity-50 text-base-content hover:underline"
                     >
                       See All
                     </a>
                   )}
                 </div>
                 <div className="col-span-2">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                     {loading ? renderSkeleton() : renderProjects()}
                   </div>
                 </div>
