@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { AiOutlineFork, AiOutlineStar, AiOutlineEye } from 'react-icons/ai';
+import { LiaExternalLinkAltSolid } from 'react-icons/lia';
 import { MdInsertLink } from 'react-icons/md';
 import { ga, getLanguageColor, skeleton } from '../../utils';
 import { GithubProject } from '../../interfaces/github-project';
@@ -125,11 +126,8 @@ const GithubProjectCard = ({
             </div>
             <div className="flex flex-row items-center">
               {item?.homepage && (
-                <a href={item?.homepage} className="flex items-center mr-2">
-                  <div
-                    className="w-3 h-3 mr-1 rounded-full opacity-60"
-                    style={{ backgroundColor: getLanguageColor('ABAP') }}
-                  />
+                <a href={item?.homepage} className="flex items-center mr-4">
+                  <LiaExternalLinkAltSolid className="mr-0.5" />
                   <span className="underline">Live</span>
                 </a>
               )}
