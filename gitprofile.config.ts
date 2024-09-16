@@ -20,7 +20,14 @@ const CONFIG = {
         limit: 16, // How many projects to display.
         exclude: {
           forks: true, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          projects: [
+            'tonyrex99/CEN-524-assignments',
+            'tonyrex99/SQLite3',
+            'tonyrex99/pwa-builder',
+            'tonyrex99/alx-pre_course',
+            'tonyrex99/legendary-journey',
+            'tonyrex99/alx-zero_day',
+          ], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
@@ -85,7 +92,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.google.com/file/d/128gNTYXowPHKQcYgV6cWsu3dr5so5uL1/view?usp=sharing', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'JavaScript',
