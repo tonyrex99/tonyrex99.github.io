@@ -1,8 +1,22 @@
 // gitprofile.config.ts
-
+const USERNAME = 'tonyrex99';
+const EXCLUDED_PROJECTS = [
+  `CEN-524-assignments`,
+  `SQLite3`,
+  `pwa-builder`,
+  `alx-pre_course`,
+  `legendary-journey`,
+  `alx-zero_day`,
+  `vercel-github-readme-stats`,
+  `SQLite3`,
+  `github-readme-stats`,
+  `nextjs-corporate-starter-main`,
+  `pwa-builder`,
+  `legendary-journey`,
+];
 const CONFIG = {
   github: {
-    username: 'tonyrex99', // Your GitHub org/user name. (This is the only required config)
+    username: USERNAME, // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -20,14 +34,9 @@ const CONFIG = {
         limit: 16, // How many projects to display.
         exclude: {
           forks: true, // Forked projects will not be displayed if set to true.
-          projects: [
-            'tonyrex99/CEN-524-assignments',
-            'tonyrex99/SQLite3',
-            'tonyrex99/pwa-builder',
-            'tonyrex99/alx-pre_course',
-            'tonyrex99/legendary-journey',
-            'tonyrex99/alx-zero_day',
-          ], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          projects: EXCLUDED_PROJECTS.map(
+            (project) => `${USERNAME}/${project}`,
+          ), // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
