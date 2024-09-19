@@ -131,7 +131,7 @@ const GithubProjectCard = ({
                     e.stopPropagation();
                   }}
                   href={item?.homepage}
-                  className="flex items-center mr-4"
+                  className="flex items-center mx-4"
                 >
                   <LiaExternalLinkAltSolid className="mr-0.5" />
                   <span className="underline">Live</span>
