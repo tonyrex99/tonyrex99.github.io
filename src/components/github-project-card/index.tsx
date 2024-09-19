@@ -126,7 +126,13 @@ const GithubProjectCard = ({
             </div>
             <div className="flex flex-row items-center">
               {item?.homepage && (
-                <a href={item?.homepage} className="flex items-center mr-4">
+                <a
+                  onClick={(e) => {
+                    e.stopPropagation();
+                  }}
+                  href={item?.homepage}
+                  className="flex items-center mr-4"
+                >
                   <LiaExternalLinkAltSolid className="mr-0.5" />
                   <span className="underline">Live</span>
                 </a>

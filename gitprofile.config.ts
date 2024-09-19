@@ -1,6 +1,7 @@
 // gitprofile.config.ts
 const USERNAME = 'tonyrex99';
 const EXCLUDED_PROJECTS = [
+  USERNAME,
   `CEN-524-assignments`,
   `SQLite3`,
   `pwa-builder`,
@@ -13,6 +14,9 @@ const EXCLUDED_PROJECTS = [
   `nextjs-corporate-starter-main`,
   `pwa-builder`,
   `legendary-journey`,
+  `alx-higher_level_programming`,
+  `alx-low_level_programming`,
+  `printf`,
 ];
 const CONFIG = {
   github: {
@@ -31,7 +35,7 @@ const CONFIG = {
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 16, // How many projects to display.
+        limit: 50, // How many projects to display.
         exclude: {
           forks: true, // Forked projects will not be displayed if set to true.
           projects: EXCLUDED_PROJECTS.map(
