@@ -31,7 +31,7 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github Projects',
+      header: '"Public" Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
@@ -51,14 +51,20 @@ const CONFIG = {
       },
     },
     external: {
-      /*
-      header: 'My Projects',
+      /**
+      header: 'Private Projects',
       // To hide the `External Projects` section, keep it empty.
+
       projects: [
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+          title: 'Gazzar',
+          description: `Gazzar is an extensive, React-based eCommerce platform designed to empower businesses by allowing them to create and manage their own private stores, much like Shopify. The platform offers a seamless way for businesses to handle key aspects of online transactions, including product and customer management, order tracking, performance monitoring, and more.
+
+With a rich feature set, Gazzar allows business owners to customize their storefronts with unique themes and specialized functionalities, delivering an optimal user experience. It supports the display of detailed statistics and performance metrics, enabling businesses to track their sales, order status, and customer reviews effectively. Gazzar also offers future-proof features, such as customizable storefront skins and themes, which will be rolled out soon.
+
+This project showcases advanced proficiency in ReactJS, CSS, and the Ant Design component library. The use of Ant Design helps maintain a standardized and customizable design foundation, which is integral to the look and feel of Gazzar’s dynamic business-specific themes.
+
+Gazzar is designed not only to make it easy for businesses to manage their eCommerce operations but also to ensure a smooth shopping experience for customers. The storefront allows users to add items to carts, check out, and interact with businesses seamlessly.`,
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://example.com',
@@ -72,8 +78,7 @@ const CONFIG = {
           link: 'https://example.com',
         },
       ],
-    },
-    */
+       */
     },
   },
   seo: {
