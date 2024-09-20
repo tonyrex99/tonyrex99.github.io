@@ -103,8 +103,8 @@ Gazzar is designed not only to make it easy for businesses to manage their eComm
     dev: '', // 'arifszn',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
-    telegram: '',
-    website: '', //'https://www.arifszn.com',
+    telegram: 'https://t.me/tonyrex99',
+    website: `https:${USERNAME}/github.io`, //'https://www.arifszn.com',
     phone: '',
     email: 'tonyrex99@wearehackerone.com',
   },
@@ -130,7 +130,7 @@ Gazzar is designed not only to make it easy for businesses to manage their eComm
       position: 'Front-End and Mobile Developer',
       from: 'February 2024',
       to: 'Present',
-      companyLink: 'https://example.com', // No link provided in the resume, update if needed
+      companyLink: '', //'https://example.com', // No link provided in the resume, update if needed
     },
     {
       company: 'Infonomics Technology Services',
@@ -157,46 +157,59 @@ Gazzar is designed not only to make it easy for businesses to manage their eComm
 
   certifications: [
     {
-      name: 'Introduction to Cybersecurity',
-      body: 'Cisco',
-      year: 'March 2022', // No exact date in the resume, assuming date
-      link: 'https://example.com', // No link provided in the resume, update if needed
-    },
-    {
-      name: 'Programming in C++: A Hands-on Introduction Specialization',
-      body: 'Coursera',
-      year: 'March 2022', // Add exact dates if required
-      link: 'W2WDC9P84SC6', // No direct link provided
-    },
-    {
-      name: 'React Native',
-      body: 'Coursera',
-      year: 'March 2022',
-      link: 'VY4LLMU7SDCH',
-    },
-    {
-      name: 'Introduction to TensorFlow for AI, ML, and Deep Learning',
-      body: 'Coursera',
-      year: 'March 2022',
-      link: 'W4GWBGHGWBJ8',
-    },
-    {
-      name: 'Python Basics',
-      body: 'Coursera',
-      year: 'March 2022',
-      link: 'X3SP92C36LCS',
-    },
-    {
-      name: 'C Basics: Selection and Iteration',
-      body: 'Coursera',
-      year: 'March 2022',
-      link: '959RDEJD6AXQ',
+      name: 'Frontend Developer (React)',
+      body: 'HackerRank',
+      year: 'August 2024', // No exact date in the resume, assuming date
+      link: 'https://www.hackerrank.com/certificates/cf9323173cb9', // No link provided in the resume, update if needed
     },
     {
       name: 'Live the Code 2.0',
       body: 'GeeksforGeeks ADGIPS Chapter',
-      year: 'March 2022',
-      link: 'c9f730a6-bed2-4707-b29b-a8684ad1f899',
+      year: 'September 2023',
+      link: 'https://certificate.givemycertificate.com/c/c9f730a6-bed2-4707-b29b-a8684ad1f899',
+    },
+    {
+      name: 'React Native',
+      body: 'Coursera',
+      year: 'December 2022',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/VY4LLMU7SDCH',
+    },
+    {
+      name: 'Introduction to Cybersecurity',
+      body: 'Cisco',
+      year: 'July 2022', // No exact date in the resume, assuming date
+      link: 'https://www.credly.com/badges/ae676fb9-7555-41e2-89ac-b54f198da9d0?source=linked_in_profile', // No link provided in the resume, update if needed
+    },
+    {
+      name: 'Project: Creating Your First C++ Application',
+      body: 'Coursera',
+      year: 'August 2022', // Add exact dates if required
+      link: 'https://www.coursera.org/account/accomplishments/certificate/HSNVMF3RMFUA', // No direct link provided
+    },
+    {
+      name: 'Programming in C++: A Hands-on Introduction Specialization',
+      body: 'Coursera',
+      year: 'August 2022', // Add exact dates if required
+      link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/W2WDC9P84SC6', // No direct link provided
+    },
+
+    {
+      name: 'Introduction to TensorFlow for AI, ML, and Deep Learning',
+      body: 'Coursera',
+      year: 'May 2021',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/W4GWBGHGWBJ8',
+    },
+    {
+      name: 'Python Basics',
+      body: 'Coursera',
+      year: 'July 2020',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/X3SP92C36LCS',
+    },
+    {
+      name: 'C Basics: Selection and Iteration',
+      body: 'Coursera',
+      year: 'July 2022',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/959RDEJD6AXQ',
     },
   ],
 
