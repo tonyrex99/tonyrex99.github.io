@@ -90,7 +90,7 @@ const CONFIG = {
           title: 'Reflex Pro (React Native)',
           description: `Reflex Pro is a cross-platform React Native + Expo mobile app that measures reaction time and focus with interactive challenges (tap-to-change colour, timed sequences, memory levels, and pop-to-tap tests). Published on Google Play Store.`,
           imageUrl:
-            'https://play.google.com/intl/en_us/badges/images/generic/en_generic_rgb_wo_60.png',
+            'https://play-lh.googleusercontent.com/ybH4uq4IVRuCckDR_crcZIfGuJhpUxBv80S_A4FP6Q0CkSq6E2etE5Tws3UtIlF_wfG5xsIaA1eA5goLLo5DQg=w480-h960-rw',
           link: 'https://play.google.com/store/apps/details?id=com.reflexpro.app',
         },
         {
