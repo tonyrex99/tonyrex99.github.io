@@ -17,6 +17,9 @@ const EXCLUDED_PROJECTS = [
   `alx-higher_level_programming`,
   `alx-low_level_programming`,
   `printf`,
+  `Bincom-project`,
+  `lendsqr-fe-test`,
+
 ];
 const CONFIG = {
   github: {
@@ -51,34 +54,53 @@ const CONFIG = {
       },
     },
     external: {
-      /**
-      header: 'Private Projects',
-      // To hide the `External Projects` section, keep it empty.
-
+      // External / Private projects (contract work or non-github projects)
+      header: 'Private & Contract Work',
+      // To hide the `External Projects` section, keep `projects` empty.
       projects: [
         {
-          title: 'Gazzar',
-          description: `Gazzar is an extensive, React-based eCommerce platform designed to empower businesses by allowing them to create and manage their own private stores, much like Shopify. The platform offers a seamless way for businesses to handle key aspects of online transactions, including product and customer management, order tracking, performance monitoring, and more.
-
-With a rich feature set, Gazzar allows business owners to customize their storefronts with unique themes and specialized functionalities, delivering an optimal user experience. It supports the display of detailed statistics and performance metrics, enabling businesses to track their sales, order status, and customer reviews effectively. Gazzar also offers future-proof features, such as customizable storefront skins and themes, which will be rolled out soon.
-
-This project showcases advanced proficiency in ReactJS, CSS, and the Ant Design component library. The use of Ant Design helps maintain a standardized and customizable design foundation, which is integral to the look and feel of Gazzar’s dynamic business-specific themes.
-
-Gazzar is designed not only to make it easy for businesses to manage their eCommerce operations but also to ensure a smooth shopping experience for customers. The storefront allows users to add items to carts, check out, and interact with businesses seamlessly.`,
+          title: 'SpinLotto',
+          description: `SpinLotto is a Nigeria-based sports-betting and lottery-draw platform that features an interactive lucky wheel spin mechanic. Contributed as a frontend contractor implementing responsive UI, interactive spin experience, and integration with backend endpoints and analytics.`,
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://img.freepik.com/free-vector/online-gambling-abstract-concept-illustration_335657-3336.jpg',
+          link: 'https://spinlotto.com.ng',
         },
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+          title: 'Plagiarism Checker (React Native)',
+          description: `Cross-platform React Native mobile app that accepts text or document uploads, requests plagiarism reports from a backend service, visualizes match highlights and statistics, and generates downloadable PDF reports for users. Implemented UI, file handling, and frontend-backend integration.`,
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://img.freepik.com/free-vector/checklist-concept-illustration_114360-7211.jpg',
+          link: '',
+        },
+        {
+          title: 'Final Year Project — Skin Disease Detection System',
+          description: `Convolutional neural network (TensorFlow) trained to detect and classify skin lesion types from images. Built a Telegram bot, a web frontend and a Progressive Web App (PWA) so users can upload images and receive classification results. Frontend (PWA) repo and demo: https://github.com/tonyrex99/skin-disease-app — Backend (inference API): https://github.com/tonyrex99/skin_backend`,
+          imageUrl:
+            'https://img.freepik.com/free-vector/medical-research-abstract-concept-illustration_335657-3242.jpg',
+          link: 'https://github.com/tonyrex99/skin-disease-app',
+        },
+        {
+          title: 'Fintech Products (Confidential)',
+          description: `Multiple fintech product components developed under contract (details withheld). High-level contributions include agent onboarding and management, inventory/device accountability, admin dashboards for commissions and payouts, partner portals, verification workflows, and a payout scheduler. Details are abstracted due to an active contract.`,
+          imageUrl:
+            'https://img.freepik.com/free-vector/financial-technology-concept-illustration_114360-1405.jpg',
+          link: '',
+        },
+        {
+          title: 'Reflex Pro (React Native)',
+          description: `Reflex Pro is a cross-platform React Native + Expo mobile app that measures reaction time and focus with interactive challenges (tap-to-change colour, timed sequences, memory levels, and pop-to-tap tests). Published on Google Play Store.`,
+          imageUrl:
+            'https://play.google.com/intl/en_us/badges/images/generic/en_generic_rgb_wo_60.png',
+          link: 'https://play.google.com/store/apps/details?id=com.reflexpro.app',
+        },
+        {
+          title: 'Mobile Games (Quizzes & Puzzles)',
+          description: `Various casual mobile games published previously including quiz games (e.g., children's trivia), word-puzzle games that connect words (crossword-like), and simple arcade titles. Implemented game UI, levels, scoring, and Play Store publishing flow.`,
+          imageUrl:
+            'https://img.freepik.com/free-vector/game-controller-concept-illustration_114360-1707.jpg',
+          link: '',
         },
       ],
-       */
     },
   },
   seo: {
@@ -87,7 +109,7 @@ Gazzar is designed not only to make it easy for businesses to manage their eComm
     imageURL: '',
   },
   social: {
-    linkedin: 'ebunifeoluwa-adenuga-131a981b1',
+    linkedin: 'ebunifeoluwa-adenuga',
     twitter: '', // 'arif_szn',
     mastodon: '', //'arifszn@mastodon.social',
     researchGate: '', //
@@ -126,41 +148,100 @@ Gazzar is designed not only to make it easy for businesses to manage their eComm
   ],
   experiences: [
     {
-      company: 'Ashinity Synergy',
-      position: 'Front-End and Mobile Developer',
-      from: 'February 2024',
+      company: 'SAPPHIRE VIRTUAL NETWORKS LIMITED',
+      position: 'Frontend Developer (Remote)',
+      from: 'May 2025',
       to: 'Present',
-      companyLink: '', //'https://example.com', // No link provided in the resume, update if needed
+      companyLink: 'https://sapphirevirtual.com/',
+      // notes: Contributed to fintech products, reporting, performance and API integrations
+    },
+    {
+      company: 'Freelance / Independent Projects',
+      position: 'Front-end, Desktop & Back-end Developer',
+      from: 'November 2024',
+      to: 'Present',
+      companyLink: '',
+      // notes: .NET MAUI, Windows Forms, POS reverse-engineering, Node.js + GraphQL e-commerce, Odoo modules
+    },
+    {
+      company: 'Ashinity Synergy',
+      position: 'Front-end and Mobile Developer',
+      from: 'February 2024',
+      to: 'October 2024',
+      companyLink: '',
+      // notes: Performance optimizations, NextJS/Remix work, code refactors and deployments
     },
     {
       company: 'Infonomics Technology Services',
-      position: 'React Developer',
+      position: 'Software Developer',
       from: 'July 2023',
       to: 'September 2023',
-      companyLink: '', //'https://example.com', // No link provided in the resume, update if needed
+      companyLink: 'https://www.infonomicsng.com/',
     },
     {
       company: 'Mdot Technologies',
       position: 'Cross-Platform React Developer',
       from: 'March 2023',
       to: 'July 2023',
-      companyLink: '', // 'https://example.com', // No link provided in the resume, update if needed
+      companyLink: '',
     },
     {
       company: 'Patea Essentials',
       position: 'Computer Operator and Technician',
       from: 'June 2017',
       to: 'April 2021',
-      companyLink: '', //'https://example.com', // No link provided in the resume, update if needed
+      companyLink: '',
     },
   ],
 
   certifications: [
     {
+      name: 'Network Support and Security',
+      body: 'Cisco',
+      year: 'September 2024',
+      link: 'https://www.credly.com/badges/5bb105b5-7cb1-467f-b3ce-6c5785852ccb/linked_in_profile',
+    },
+    {
+      name: 'Junior Cybersecurity Analyst Career Path',
+      body: 'Cisco Networking Academy',
+      year: 'September 2024',
+      link: 'https://www.credly.com/badges/485aaa54-7f7b-418e-8020-ea4839689dc7/linked_in_profile',
+    },
+    {
+      name: 'Network Defense',
+      body: 'Cisco',
+      year: 'September 2024',
+      link: 'https://www.credly.com/badges/d4d2815d-1dfd-4bb4-90d5-352ed9de818b/linked_in_profile',
+    },
+    {
+      name: 'Cyber Threat Management',
+      body: 'Cisco',
+      year: 'September 2024',
+      link: 'https://www.credly.com/badges/c38c5a02-0aef-4a24-814b-622f5754001b/linked_in_profile',
+    },
+    {
+      name: 'Ethical Hacker',
+      body: 'Cisco',
+      year: 'September 2024',
+      link: 'https://www.credly.com/badges/2aa47622-3a30-4492-90fd-9d1c69f95450/linked_in_profile',
+    },
+    {
+      name: 'Endpoint Security',
+      body: 'Cisco',
+      year: 'August 2024',
+      link: 'https://www.credly.com/badges/0def7128-a645-43ac-9dd0-6aee6d8cbab0/linked_in_profile',
+    },
+    {
       name: 'Frontend Developer (React)',
       body: 'HackerRank',
       year: 'August 2024', // No exact date in the resume, assuming date
       link: 'https://www.hackerrank.com/certificates/cf9323173cb9', // No link provided in the resume, update if needed
+    },
+    {
+      name: 'Prompt Engineering',
+      body: 'Covenant University',
+      year: '2024',
+      link: '',
     },
     {
       name: 'Live the Code 2.0',
@@ -175,12 +256,6 @@ Gazzar is designed not only to make it easy for businesses to manage their eComm
       link: 'https://www.coursera.org/account/accomplishments/certificate/VY4LLMU7SDCH',
     },
     {
-      name: 'Introduction to Cybersecurity',
-      body: 'Cisco',
-      year: 'July 2022', // No exact date in the resume, assuming date
-      link: 'https://www.credly.com/badges/ae676fb9-7555-41e2-89ac-b54f198da9d0?source=linked_in_profile', // No link provided in the resume, update if needed
-    },
-    {
       name: 'Project: Creating Your First C++ Application',
       body: 'Coursera',
       year: 'August 2022', // Add exact dates if required
@@ -192,7 +267,18 @@ Gazzar is designed not only to make it easy for businesses to manage their eComm
       year: 'August 2022', // Add exact dates if required
       link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/W2WDC9P84SC6', // No direct link provided
     },
-
+    {
+      name: 'Introduction to Cybersecurity',
+      body: 'Cisco',
+      year: 'July 2022', // No exact date in the resume, assuming date
+      link: 'https://www.credly.com/badges/ae676fb9-7555-41e2-89ac-b54f198da9d0?source=linked_in_profile', // No link provided in the resume, update if needed
+    },
+    {
+      name: 'C Basics: Selection and Iteration',
+      body: 'Coursera',
+      year: 'July 2022',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/959RDEJD6AXQ',
+    },
     {
       name: 'Introduction to TensorFlow for AI, ML, and Deep Learning',
       body: 'Coursera',
@@ -204,12 +290,6 @@ Gazzar is designed not only to make it easy for businesses to manage their eComm
       body: 'Coursera',
       year: 'July 2020',
       link: 'https://www.coursera.org/account/accomplishments/certificate/X3SP92C36LCS',
-    },
-    {
-      name: 'C Basics: Selection and Iteration',
-      body: 'Coursera',
-      year: 'July 2022',
-      link: 'https://www.coursera.org/account/accomplishments/certificate/959RDEJD6AXQ',
     },
   ],
 
